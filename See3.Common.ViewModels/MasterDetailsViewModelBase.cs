@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,6 +20,7 @@ namespace See3.Common.ViewModels
                 {
                     _selectedItem = value;
                     SelectedItemChanged?.Invoke(this, EventArgs.Empty);
+                    Debug.WriteLine("SelectedItem changed");
                     OnPropertyChanged("SelectedItem");
                 }
             }
