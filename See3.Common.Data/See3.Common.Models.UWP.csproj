@@ -7,8 +7,8 @@
     <ProjectGuid>{D22CD49A-C5C3-4B8F-8892-4882B0DB3D35}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>See3.Common.Models</RootNamespace>
-    <AssemblyName>See3.Common.Models</AssemblyName>
+    <RootNamespace>See3.Common.Models.UWP</RootNamespace>
+    <AssemblyName>See3.Common.Models.UWP</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion>10.0.10240.0</TargetPlatformVersion>
