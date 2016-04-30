@@ -2,10 +2,10 @@
 
 namespace See3.Common.Music.Interfaces
 {
-    public interface IArtist : IMusicItem
+    public interface IArtist<TAlbum, TSong>
     {
-        string Bio { get; set; }
-        IEnumerable<IAlbum> Albums { get; set; }
-        IEnumerable<ISong> Songs { get; set; }
+        string Name { get; set; }
+        IEnumerable<TAlbum> Albums { get; set; }
+        IEnumerable<TSong> Songs { get; set; }
     }
 }

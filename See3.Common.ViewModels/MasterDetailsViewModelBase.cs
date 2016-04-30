@@ -20,7 +20,6 @@ namespace See3.Common.ViewModels
                 {
                     _selectedItem = value;
                     SelectedItemChanged?.Invoke(this, EventArgs.Empty);
-                    Debug.WriteLine("SelectedItem changed");
                     OnPropertyChanged("SelectedItem");
                 }
             }

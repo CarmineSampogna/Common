@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace See3.Common.Music.Interfaces
 {
-    public interface ISong : IMusicItem
+    public interface ISong
     {
-        IArtist Artist { get; set; }
-        IAlbum Album { get; set; }
-        TimeSpan Duration { get; set; }
+        string Title { get; set; }
+        string Artist { get; set; }
+        string Album { get; set; }
+        string Duration { get; set; }
     }
 }

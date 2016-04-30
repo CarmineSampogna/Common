@@ -3,10 +3,11 @@ using System.Collections.Generic;
 
 namespace See3.Common.Music.Interfaces
 {
-    public interface IAlbum : IMusicItem
+    public interface IAlbum<TSong>
     {
+        string Title { get; set; }
         DateTimeOffset ReleaseDate { get; set; }
-        IArtist Artist { get; set; }
-        IEnumerable<ISong>  Songs { get; set; }
+        string Artist { get; set; }
+        IEnumerable<TSong>  Songs { get; set; }
     }
 }

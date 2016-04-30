@@ -12,14 +12,10 @@ namespace See3.Common.Models
         public Guid Id { get; set; }
         public string Name
         {
-            get { return "/{FirstName} /{LastName}"; }
-            set
-            { }
+            get { return FirstName + " " + LastName; }
+            set { }
         }
-
-        public Guid AddressId { get; set; }
-        public Guid ContactInfoId { get; set; }
-
+        
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public DateTime DateOfBirth { get; set; }
