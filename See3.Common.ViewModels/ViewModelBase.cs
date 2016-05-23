@@ -13,12 +13,24 @@ namespace See3.Common.ViewModels
         public abstract Task InitializeAsync();
 
         /// <summary>
+        /// Should be called when app is reactivated.
+        /// </summary>
+        /// <returns></returns>
+        public abstract Task ActivateAsync();
+
+        /// <summary>
         /// Logic to refresh the state of the ViewModel. Should be called when app resumes.
         /// </summary>
         /// <returns></returns>
-        public abstract Task RefreshAsync();
+        public virtual Task RefreshAsync()
+        {
+            return Task.Run(() => { });
+        }
 
-        public abstract Task RefreshAsync<TParameter>(TParameter parameter);
+        public virtual Task RefreshAsync<TParameter>(TParameter parameter)
+        {
+            return Task.Run(() => { });
+        }
 
         /// <summary>
         /// Should be called once, when ViewModel is no longer needed.

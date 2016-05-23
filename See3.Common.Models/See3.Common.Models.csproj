@@ -46,6 +46,7 @@
     <Compile Include="Interfaces\ILocatableEntity.cs" />
     <Compile Include="Interfaces\INamedEntity.cs" />
     <Compile Include="Interfaces\IPerson.cs" />
+    <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

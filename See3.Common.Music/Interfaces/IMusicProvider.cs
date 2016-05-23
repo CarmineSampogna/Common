@@ -8,8 +8,8 @@ namespace See3.Common.Music.Interfaces
 {
     public interface IMusicProvider
     {
-        Task<IEnumerable<IArtist<IAlbum<ISong>, ISong>>> GetArtistsForUserAsync(string userId);
-        Task<IEnumerable<IAlbum<ISong>>> GetAlbumsForUserAsync(string userId);
-        Task<IEnumerable<ISong>> GetSongsForUserAsync(string userId);
+        Task<IEnumerable<Artist>> GetArtistsAsync();
+        Task<IEnumerable<Album>> GetAlbumsAsync();
+        Task<IEnumerable<Song>> GetSongsAsync();
     }
 }
