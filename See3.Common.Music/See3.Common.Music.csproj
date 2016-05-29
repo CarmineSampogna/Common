@@ -39,6 +39,9 @@
   <ItemGroup>
     <Compile Include="Artist.cs" />
     <Compile Include="DefaultMusicProvider.cs" />
+    <Compile Include="Genre.cs" />
+    <Compile Include="Interfaces\IMediaContainer.cs" />
+    <Compile Include="Interfaces\SongCollectionBase.cs" />
     <Compile Include="Song.cs" />
     <Compile Include="Album.cs" />
     <Compile Include="Interfaces\IMusicProvider.cs" />

@@ -59,6 +59,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="BasicTests.cs" />
     <Compile Include="EfTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -66,6 +67,10 @@
     <ProjectReference Include="..\See3.Common.Models\See3.Common.Models.csproj">
       <Project>{1b5281cd-3216-4e16-912e-e26b10d6c65a}</Project>
       <Name>See3.Common.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\See3.Common.Music\See3.Common.Music.csproj">
+      <Project>{E0B26C2B-06BF-4615-B00A-2DF9C604DF2A}</Project>
+      <Name>See3.Common.Music</Name>
     </ProjectReference>
     <ProjectReference Include="..\See3.EF\See3.EF.csproj">
       <Project>{8b4b5364-6ffe-40a7-8be5-17a21b697452}</Project>
