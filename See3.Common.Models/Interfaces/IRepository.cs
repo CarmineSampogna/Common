@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace See3.Common.Models.Interfaces
 {
-    public interface IRepository<TEntity> where TEntity : IEntity
+    public interface IRepository<TEntity, TKey> where TEntity : IEntity
     {
-        TEntity InsertOrUpdate(TEntity entity);
-        void Delete(Guid id);
-        TEntity Get(Guid id);
-        IEnumerable<TEntity> GetAll();
+        Task<TEntity> InsertOrUpdateAsync(TEntity entity);
+        Task DeleteAsync(TKey id);
+        Task<TEntity> GetItemByIdAsync(TKey id);
+        Task<IEnumerable<TEntity>> GetAllAsync();
     }
 }

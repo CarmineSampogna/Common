@@ -14,7 +14,8 @@ namespace See3.Common.Music
         public Album Album { get; set; }
         public TimeSpan Duration { get; set; }
         public string Uri { get; set; }
-        
+        public int PlayCount { get; set; }
+
         public IEnumerable<Uri> MediaUris
         {
             get

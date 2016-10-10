@@ -35,11 +35,15 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .NET Framework is automatically included -->
+    <ProjectReference Include="..\See3.Common.Models\See3.Common.Models.csproj">
+      <Project>{1B5281CD-3216-4E16-912E-E26B10D6C65A}</Project>
+      <Name>See3.Common.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DelegateCommand.cs" />
+    <Compile Include="EntityCollectionViewModel.cs" />
     <Compile Include="ImageCellViewModel.cs" />
-    <Compile Include="MasterDetailsViewModelBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModelBase.cs" />
   </ItemGroup>

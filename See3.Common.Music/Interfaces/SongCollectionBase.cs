@@ -9,6 +9,13 @@ namespace See3.Common.Music.Interfaces
     public abstract class SongCollectionBase : IMediaContainer
     {
         public List<Song> Songs { get; set; }
+        public int PlayCount
+        {
+            get
+            {
+                return Songs.Sum(s => s.PlayCount);
+            }
+        }
         public IEnumerable<Uri> MediaUris
         {
             get
@@ -30,14 +37,7 @@ namespace See3.Common.Music.Interfaces
         }
         public SongCollectionBase()
         {
-            try
-            {
-                Songs = new List<Song>();
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Something broke", ex);
-            }
+            Songs = new List<Song>();
         }
     }
 }

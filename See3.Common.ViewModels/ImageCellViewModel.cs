@@ -49,20 +49,11 @@ namespace See3.Common.ViewModels
                 }
             }
         }
-
-        public override void Dispose()
-        {
-            
-        }
+        
 
         public override async Task InitializeAsync()
         {
             return;
-        }
-
-        public override async Task ActivateAsync()
-        {
-            //TODO
         }
     }
 }
